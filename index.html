@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UX Designer Portfolio</title>
+    <title>Manuel Garcia &mdash; UX Designer Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 	
 	<style>
@@ -29,18 +29,41 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
+		
+  	<nav>
+			<div class="logo">
+        		<img src = "images/logo-white.png" alt="logo">
+				
+    		</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class ="on">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- Add more navigation links -->
+        </ul>
+			
+        <div class="mobile-menu">
+			<div class="mobile-logo">
+        <img src = "images/logo-white.png" alt="logo">
+    </div>
+            <ul class="mobile-nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <!-- Add more navigation links for mobile -->
             </ul>
-        </nav>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </nav>
     </header>
 
     <main>
         <section class="intro">
-			<img src="images/gif.gif" alt="Your GIF" class="intro-gif">
+			<img src="images/gif.gif" alt="Header Gif" class="intro-gif">
             <h1>Hello, I'm Manny Garcia &mdash;</h1>
             <p class="typing-animation">I'm a UX designer passionate about creating intuitive and delightful user experiences.</p>
 
@@ -52,10 +75,10 @@
         <section id = "projects" class="projects">
             <h2>My Projects</h2>
 
-                <!-- Replace with your case studies -->
+
 <div class="case-study">
     <div class="image-wrapper">
-        <img src="images/meetspace.jpg" alt="Case Study 1" class="case-image">
+        <img src="images/meetspace.jpg" alt="Case Study 1: MeetSpace" class="case-image">
      <a href="meetspace.html" class="case-link">  
 		<div class="overlay">
         
@@ -67,11 +90,11 @@
     <p>UX Research & Design</p>
 </div>
 			
-			
+<!-- 	
 <div class="case-study">
     <div class="image-wrapper">
-        <img src="images/bolt.jpg" alt="Case Study 1" class="case-image">
-     <a href="case_study_link.html" class="case-link">  
+        <img src="images/bolt.jpg" alt="Case Study 2: Bolt App" class="case-image">
+     <a href="bolt.html" class="case-link">  
 		<div class="overlay">
         
             <h3 class="case-name case-name-green">Bolt App</h3>
@@ -84,8 +107,8 @@
 				
 <div class="case-study">
     <div class="image-wrapper">
-        <img src="images/whiterhino.jpg" alt="Case Study 1" class="case-image">
-        <a href="case_study_link.html" class="case-link">  
+        <img src="images/whiterhino.jpg" alt="Case Study 3: White Rhino" class="case-image">
+        <a href="whiterhino.html" class="case-link">  
 		<div class="overlay">
         
             <h3 class="case-name case-name-blue">White Rhino Coffee Shop</h3>
@@ -95,12 +118,11 @@
     </div>
     <p>Web Design</p>
 </div>
-				
+-->					
 <div class="case-study">
     <div class="image-wrapper">
-        <img src="images/fauxcades.jpg" alt="Case Study 1" class="case-image">
-        <div class="overlay">
-        <a href="case_study_link.html" class="case-link">  
+        <img src="images/fauxcades.jpg" alt="Case Study 4: Fauxcades" class="case-image">
+        <a href="fauxcades.html" class="case-link">  
 		<div class="overlay">
         
             <h3 class="case-name case-name-purple">Fauxcades</h3>
@@ -122,36 +144,10 @@
 <footer>
     <p>&copy; 2023 Manny Garcia for SI 539</p>
 </footer>	
-	
-<script>
 
-        // JavaScript for showing/hiding the return to top button
-        const returnToTopButton = document.getElementById('return-to-top');
-
-        window.addEventListener('scroll', () => {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                returnToTopButton.style.display = 'block';
-            } else {
-                returnToTopButton.style.display = 'none';
-            }
-        });
-
-        returnToTopButton.addEventListener('click', () => {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        });
-	
-	
-        function restartAnimation() {
-            const element = document.querySelector('.typing-animation');
-            element.classList.remove('typing-animation');
-            void element.offsetWidth; // Trigger reflow to restart the animation
-            element.classList.add('typing-animation');
-            setTimeout(restartAnimation, 10000); // Restart after 10 seconds (10000 milliseconds)
-        }
-
-        setTimeout(restartAnimation, 10000); // Start the animation initially and then restart after 10 seconds
-    </script>
+<script src="returnbutton.js"></script>	
+<script src="gifanimation.js"></script>	
+<script src="mobilemenu.js"></script>	
 	
 </body>
 	

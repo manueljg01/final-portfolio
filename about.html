@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuel Garcia &mdash; About Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+	
+	<style>
+
+        #return-to-top {
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            display: none;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 50px;
+            cursor: pointer;
+        }
+
+        #return-to-top:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+		
+  	<nav>
+			<div class="logo">
+        		<img src = "images/logo-white.png" alt="logo">
+				
+    		</div>
+        <ul class="nav-links">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html" class ="on">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- Add more navigation links -->
+        </ul>
+			
+        <div class="mobile-menu">
+			<div class="mobile-logo">
+        <img src = "images/logo-white.png" alt="logo">
+    </div>
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- Add more navigation links for mobile -->
+            </ul>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+  <main>
+	  
+	  
+     <section id="Introduction" class="intro">
+           <div class="full-width-photo">
+            <img src="images/headerimage.jpg" alt="Header Image">
+			</div>
+		 <h2>"Design is so simple, that's why it is so complicated."</h2>
+		 <h4>&mdash; Paul Rand</h4>
+		 <a href="#about" class="scroll-down">
+        <img src="images/arrow.png" alt="Scroll Down">
+    </a>
+	</section>
+	  
+	 <section id="about" class="about-section">
+			
+            <div class="about-description" >
+                <h2>About Me</h2>
+                
+            <p>Hello! I'm Manuel Garcia. Currently, I'm located in Dallas, TX. Graphic design has always been my passion and I work hard to achieve my goals. The fun part of design is the ability to solve a problem and present my best work. I am currently working on a Masters Degree from the University of Michigan.</p>
+			<br>
+			<p>I have a wide variety skills from designing logos, to websites, packaging and more. The Adobe Suite is my most used platform but I also have experience utilizing Sketch, Figma, as well as HTML, CSS, and Java. I love working on new projects and expanding my skills.</p>
+			<br>
+			
+            </div>
+			
+			<div class="grid-item">
+        		<img src="images/manny.jpg" alt="Manuel Headshot">
+    		</div>
+		 	
+		 
+        </section>
+	  
+	 <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+        <div class="skill">
+            <img src="images/branding.jpg" alt="Branding">
+            <h3>Branding</h3>
+            <p>I am able to tackle your next branding project. From menus, to logos to other design elements, I can handle all your needs.</p>
+        </div>
+        <div class="skill">
+            <img src="images/web.jpg" alt="UX Design">
+            <h3>Web Design</h3>
+            <p>I have full knowledge working on many web design project as well as utilizing UX concepts. Knowledgeable in Figma, HTML, & CSS.</p>
+        </div>
+        <div class="skill">
+            <img src="images/logo.jpg" alt="Logo Design">
+            <h3>Logo Design</h3>
+            <p>Looking for just a logo? I can handle that as well. With just a concept I can make your idea come to life.</p>
+        </div>
+        <div class="skill">
+            <img src="images/packaging.jpg" alt="Packaging">
+            <h3>Packaging</h3>
+            <p>I have extensive knowledge in packaging. I have experience utilizing CAD software to create dielines and ensure your design looks perfect on the product.</p>
+        </div>
+    </div>
+</section>
+	  
+<section id="resume">
+    <h2>My Resume</h2>
+	<div class="resume-content">
+    <p>Download my resume below:</p>
+    <a href="media/Manuel Garcia 2023 Resume.pdf" download="Manny_Garcia_Resume.pdf">
+        <button>Download Resume</button>
+    </a>
+	</div>
+</section>
+
+<button id="return-to-top">Return to Top</button>	
+				
+</main>
+		
+<footer>
+    <p>&copy; 2023 Manny Garcia for SI 539</p>
+</footer>	
+
+<script src="returnbutton.js"></script>	
+<script src="gifanimation.js"></script>	
+<script src="mobilemenu.js"></script>	
+	
+</body>
+	
+
+
+</html>

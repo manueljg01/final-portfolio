@@ -30,12 +30,34 @@
 <body>
     <header>
         <nav>
-            <ul>
+			<div class="logo">
+        		<img src = "images/logo-white.png" alt="logo">
+				
+    		</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- Add more navigation links -->
+        </ul>
+			
+        <div class="mobile-menu">
+			<div class="mobile-logo">
+        <img src = "images/logo-white.png" alt="logo">
+    </div>
+            <ul class="mobile-nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <!-- Add more navigation links for mobile -->
             </ul>
-        </nav>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </nav>
     </header>
 
     <main>
@@ -82,18 +104,33 @@
             </div>
         </section>
 
-        <section id="roadmap" class="full-width-photo">
+<section class="jump-section">
+    <h2>Jump to Case Study Sections</h2>
+    <ul class="jump-list">
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#research">Research</a></li>
+		<li><a href="#personas">Personas</a></li>
+		<li><a href="#prototype">Prototype</a></li>
+        <li><a href="#wireframes">Wireframes</a></li>
+		<li><a href="#testing">Testing</a></li>
+        <li><a href="#final">Final Product</a></li>
+		<li><a href="#thoughts">Final Thoughts</a></li>
+    </ul>
+</section>
+		
+<section id="roadmap" class="full-width-photo">
             <h2>UX Road Map</h2>
             <img src="images/roadmap.png" alt="Full Width Photo">
-        </section>
+</section>
 		
-		<section id="Inspiration" class="full-width-photo">
+		
+<section id="Inspiration" class="full-width-photo">
             <h2>Inspiration</h2>
             <img src="images/inspirtation.png" alt="Full Width Photo">
-        </section>
+</section>
 
         
-		<section id ="Inspiration" class="two-grid">
+<section id ="research" class="two-grid">
 			
     <div class="grid-item">
 	<h2>Research</h2>
@@ -109,16 +146,16 @@
     </div>
 </section>
 		
-<section class="personas-section">
+<section id ="personas" class="personas-section">
     <h2>User Personas</h2>
     <div class="slideshow-container">
         <div class="persona-slide fade">
             <img src="images/persona1.png" alt="Persona 1">
-            <figcaption>Persona 1 Description</figcaption>
+            <figcaption>Persona 1</figcaption>
         </div>
         <div class="persona-slide fade">
             <img src="images/persona2.png" alt="Persona 2">
-            <figcaption>Persona 2 Description</figcaption>
+            <figcaption>Persona 2</figcaption>
         </div>
     </div>
     <div style="text-align:center">
@@ -127,26 +164,31 @@
     </div>
 </section>
 		
-	<section id="prototype" class="full-width-photo">
+		
+<section id="prototype" class="full-width-photo">
             <h2>Paper Prototype</h2>
 		<p>Based on the key insights and pain points derived from the user research, we started iterating various features and layouts on paper.</p>
-<br>
-<p>The ideation process was the most challenging part of the design process since it is a relatively new topic and few good solutions were on the market. Paper prototyping helped diversify our thinking capabilities and propose as many ideas as we could. Meanwhile, since this product is for enterprises, we also tried to follow the logic of existing apps and kept the design pragmatic.
+		<br>
+		<p>The ideation process was the most challenging part of the design process since it is a relatively new topic and few good solutions were on the market. Paper prototyping helped diversify our thinking capabilities and propose as many ideas as we could. Meanwhile, since this product is for enterprises, we also tried to follow the logic of existing apps and kept the design pragmatic.
 		</p>
             <img src="images/paper.jpg" alt="Full Width Photo">
-        </section>
+</section>
+	
 		
-		<section id="wireframes" class="full-width-photo">
+<section id="wireframes" class="full-width-photo">
             <h2>Wireframes</h2>
-		<p>Based on the key insights and pain points derived from the user research, we started iterating various features and layouts on paper.</p>
-<br>
-<p>The ideation process was the most challenging part of the design process since it is a relatively new topic and few good solutions were on the market. Paper prototyping helped diversify our thinking capabilities and propose as many ideas as we could. Meanwhile, since this product is for enterprises, we also tried to follow the logic of existing apps and kept the design pragmatic.
-		</p>
-<br>
-            <img src="images/wireframes.png" alt="Full Width Photo">
-        </section>
+			<p>Based on the key insights and pain points derived from the user research, we started iterating various features and layouts on paper.</p>
+			<br>
+			<p>The ideation process was the most challenging part of the design process since it is a relatively new topic and few good solutions were on the market. Paper prototyping helped diversify our thinking capabilities and propose as many ideas as we could. Meanwhile, since this product is for enterprises, we also tried to follow the logic of existing apps and kept the design pragmatic.
+			</p>
+			<br>
+            
+	<img src="images/wireframes.png" alt="Full Width Photo">
+</section>
 		
-		<section id ="testing" class="two-grid">
+		
+		
+<section id ="testing" class="two-grid">
 			
     <div class="grid-item">
 	<h2>Prototype Testing</h2>
@@ -155,19 +197,18 @@
 			<p>We identified two major problems with our initial prototype.</p>
 			<br>
 			<p>1. The booking process is too long to actually boost users' efficiency.
-2.The calendar function causes confusions and has no difference from other calendar products.</p>
-    </div>
+			2.The calendar function causes confusions and has no difference from other calendar products.</p>
+   		 </div>
 			
     <div class="grid-item">
         <img src="images/test.jpg" alt="Image 3">
     </div>
 </section>
 		
-<section id="wireframes" class="full-width-photo">
+<section id="final" class="full-width-photo">
             <h2>Final Product & Features</h2>
-</section>
-			
-<section class="two-column-section">
+	
+	<div class="two-column-section">
     <div class="wrapper">
         <div class="description">
             <h3>Feature One</h3>
@@ -178,9 +219,9 @@
     <div class="gif-column">
         <img src="images/1.gif" alt="Your GIF">
     </div>
-</section>
+	</div>
 		
-<section class="two-column-section">
+	<div class="two-column-section">
     <div class="wrapper">
         <div class="description">
             <h3>Feature Two</h3>
@@ -191,9 +232,9 @@
     <div class="gif-column">
         <img src="images/2.gif" alt="Your GIF">
     </div>
-</section>
+	</div>
 		
-		<section class="two-column-section">
+		<div class="two-column-section">
     <div class="wrapper">
         <div class="description">
             <h3>Feature Three</h3>
@@ -204,9 +245,9 @@
     <div class="gif-column">
         <img src="images/3.gif" alt="Your GIF">
     </div>
-</section>
+	</div>
 		
-		<section class="two-column-section">
+		<div class="two-column-section">
     <div class="wrapper">
         <div class="description">
             <h3>Feature Four</h3>
@@ -217,9 +258,9 @@
     <div class="gif-column">
         <img src="images/4.gif" alt="Your GIF">
     </div>
-</section>
+	</div>
 		
-		<section class="two-column-section">
+		<div class="two-column-section">
     <div class="wrapper">
         <div class="description">
             <h3>Feature Five</h3>
@@ -230,7 +271,10 @@
     <div class="gif-column">
         <img src="images/5.gif" alt="Your GIF">
     </div>
+</div>
 </section>
+			
+
 
 <button id="return-to-top">Return to Top</button>
 
@@ -241,37 +285,9 @@
 <footer>
     <p>&copy; 2023 Manny Garcia for SI 539</p>
 </footer>	
-
-<script src="slideshow.js"></script>	
-<script>
-
-        // JavaScript for showing/hiding the return to top button
-        const returnToTopButton = document.getElementById('return-to-top');
-
-        window.addEventListener('scroll', () => {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                returnToTopButton.style.display = 'block';
-            } else {
-                returnToTopButton.style.display = 'none';
-            }
-        });
-
-        returnToTopButton.addEventListener('click', () => {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        });
-	
-	
-        function restartAnimation() {
-            const element = document.querySelector('.typing-animation');
-            element.classList.remove('typing-animation');
-            void element.offsetWidth; // Trigger reflow to restart the animation
-            element.classList.add('typing-animation');
-            setTimeout(restartAnimation, 10000); // Restart after 10 seconds (10000 milliseconds)
-        }
-
-        setTimeout(restartAnimation, 10000); // Start the animation initially and then restart after 10 seconds
-    </script>
+<script src="mobilemenu.js"></script>	
+<script src="slideshow.js"></script>
+<script src="returnbutton.js"></script>
 	
 </body>
 	
