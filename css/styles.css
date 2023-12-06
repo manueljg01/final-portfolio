@@ -299,6 +299,7 @@ main {
 	
 }
 
+/* Stylings for Case studty Names */
 
 .case-name-blue{
 	color:aquamarine;
@@ -354,7 +355,7 @@ footer {
     width: 100%;
 }
 
-/* MeetSpace Stylings */
+/* MeetSpace Page Stylings (Initial building blocks) */
 
 .video-section {
     position: relative;
@@ -595,6 +596,8 @@ button:hover {
     background-color: #2980b9;
 }
 
+/* Contact Me page */
+
 #contact {
     text-align: center; 
 }
@@ -616,9 +619,11 @@ button:hover {
 
 }
 
+/* Styling for gallery in case study */
+
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3-column grid */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
 }
 
@@ -630,7 +635,6 @@ button:hover {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    cursor: pointer; /* Change cursor on hover */
 }
 
 @media (max-width: 768px) {

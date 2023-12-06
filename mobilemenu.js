@@ -1,3 +1,4 @@
+// Mobile menu display script
 const hamburger = document.querySelector('.hamburger');
 const mobileNavLinks = document.querySelector('.mobile-nav-links');
 

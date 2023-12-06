@@ -1,4 +1,4 @@
-// Gif animation
+// Gif animation restart
 
 function restartAnimation() {
             const element = document.querySelector('.typing-animation');
